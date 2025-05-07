@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+
+        <title> NeuroTune</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+
+
+    <body>
+        <header>
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/NeuroTune">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/tbdbx/">LinkedIn</a></li>
+                    <li><a href="mailto:neurotunegit@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>
+                <a href="index.html" class="main-title">NeuroTune</a>
+                <span class="sub-title">Single Neurons to Neural Circuits</span>
+            </h1>
+              
+              
+
+        </header>
+
+        <section class="nav-section">
+            <div><a class="nav-button" href="lif.html">Leaky Integrate<br> & Fire Model</a></div>
+            <div><a class="nav-button" href="hodgkin.html">Hodgkin-Huxley<br>Model</a></div>
+            <div><a class="nav-button" href="connor.html">Connor-Stevens<br>Model</a></div>
+            <div><a class="nav-button" href="aif.html">Active Integrate<br>& Fire Model</a></div>
+            <div><a class="nav-button" href="network.html">Network<br>Modeling</a></div>
+            <div><a class="nav-button" href="learning.html">Hebbian Plasticity <br>& Learning</a></div>
+            <div><a class="nav-button" href="simulations.html">Simulations</a></div>
+       </section>
+
+
+        
+       <section class="model-section">
+            <h3>Leaky Integrate-and-Fire (LIF) Model</h3>
+            <p>
+                The Leaky Integrate-and-Fire (LIF) model presents a simple model of neuron dynamics. 
+                It demonstrates how neurons integrate incoming input and fire when a threshold is reached.
+                It does not capture the full biophysical detail but is very useful for studying network behavior and spike timing.
+                <br> 
+                <br>
+                Unlike the Hodgkin-Huxley or Connor-Stevens models, which include detailed ion channel dynamics, 
+                the LIF model uses a linear differential equation to describe subthreshold membrane potential changes.
+                <br>
+                <br>
+            
+                The equation for the membrane potential \( V \) is:
+            
+                \[
+                \tau_m \frac{dV}{dt} = -(V - E_L) + R_m I(t)
+                \]
+
+               Where:
+            
+            <ul class="math-definitions">
+                \( \tau_m \): Membrane time constant (\( \tau_m = R_m C_m \))<br>
+                \( V \): Membrane potential<br>
+                \( E_L \): Leak reversal potential (resting potential)<br>
+                \( R_m \): Membrane resistance<br>
+                \( I(t) \): Input current as a function of time<br>
+            </ul>
+            
+            <p>Components of the Model<br>
+            
+                1. Passive Integration: The membrane potential \( V \) increases over time as input current \( I(t) \) is applied. 
+                This integration is leaky and the potential also decays back toward \( E_L \) if no input is present.<br/>
+
+                2. Threshold and Reset: When the membrane potential reaches to the threshold value of \( V_{th} \), the neuron fires an 
+                action potential. And the membrane potential is immediately reset to a lower value \( V_{reset} \).<br/>
+           
+    
+                3. Refractory Period: After a spike, the neuron may be held in a refractory period during which it cannot fire again, 
+                even if the threshold is exceeded. <br/>
+                
+                The LIF model is popular in theoretical neuroscience and artificial neural networks because of its simplicity and computational <br/>
+                efficiency. 
+            </p>
+            
+        </section>
+
+
+        <footer>   
+            Resources:
+        </footer>
+    
+           
+
+        
+
+        
+    </body>
+</html>
