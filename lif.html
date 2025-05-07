@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+
+        <title> NeuroTune</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+
+
+    <body>
+        <header>
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/NeuroTune">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/tbdbx/">LinkedIn</a></li>
+                    <li><a href="mailto:neurotunegit@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>
+                <a href="index.html" class="main-title">NeuroTune</a>
+                <span class="sub-title">Single Neurons to Neural Circuits</span>
+            </h1>
+              
+              
+
+        </header>
+
+        <section class="nav-section">
+            <div><a class="nav-button" href="lif.html">Leaky Integrate<br> & Fire Model</a></div>
+            <div><a class="nav-button" href="hodgkin.html">Hodgkin-Huxley<br>Model</a></div>
+            <div><a class="nav-button" href="connor.html">Connor-Stevens<br>Model</a></div>
+            <div><a class="nav-button" href="aif.html">Active Integrate<br>& Fire Model</a></div>
+            <div><a class="nav-button" href="network.html">Network<br>Modeling</a></div>
+            <div><a class="nav-button" href="learning.html">Hebbian Plasticity <br>& Learning</a></div>
+            <div><a class="nav-button" href="simulations.html">Simulations</a></div>
+       </section>
+
+
+        
+       <section class="model-section">
+            <h3>Leaky Integrate-and-Fire (LIF) Model</h3>
+            <p>
+                <h3>Leaky Integrate-and-Fire Model<br/></h3>
+                The Leaky Integrate-and-Fire (LIF) model presents a simple model of neuron dynamics. 
+                It demonstrates how neurons integrate incoming input and fire when a threshold is reached.
+                It does not capture the full biophysical detail but is very useful for studying network behavior and spike timing.
+            </p>
+            
+            <p>
+                Unlike the Hodgkin-Huxley or Connor-Stevens models, which include detailed ion channel dynamics, 
+                the LIF model uses a linear differential equation to describe subthreshold membrane potential changes.
+            </p>
+            
+            <p>The equation for the membrane potential \( V \) is:</p>
+            
+            <p>
+                \[
+                \tau_m \frac{dV}{dt} = -(V - E_L) + R_m I(t)
+                \]
+            </p>
+            
+            <p>Where:</p>
+            
+            <ul class="math-definitions">
+                <li>\( \tau_m \): Membrane time constant (\( \tau_m = R_m C_m \))</li>
+                <li>\( V \): Membrane potential</li>
+                <li>\( E_L \): Leak reversal potential (resting potential)</li>
+                <li>\( R_m \): Membrane resistance</li>
+                <li>\( I(t) \): Input current as a function of time</li>
+            </ul>
+            
+            <p><strong>Components of the Model</strong></p>
+            
+
+            <p>
+                <strong>1. Passive Integration</strong><br/>
+                The membrane potential \( V \) increases over time as input current \( I(t) \) is applied. This integration is leaky, 
+                meaning the potential also decays back toward \( E_L \) if no input is present.
+            </p>
+            
+
+            <p>
+                <strong>2. Threshold and Reset</strong><br/>
+                When the membrane potential reaches a predefined threshold \( V_{th} \), the neuron "fires" — an action potential is recorded — 
+                and the potential is immediately reset to a lower value \( V_{reset} \).
+            </p>
+            
+
+            <p>
+                <strong>3. Refractory Period</strong><br/>
+                After a spike, the neuron may be held in a refractory period during which it cannot fire again, even if the threshold is exceeded. 
+                
+            </p>
+            
+            
+            <p>
+                The LIF model is popular in theoretical neuroscience and artificial neural networks because of its simplicity and computational 
+                efficiency. 
+            </p>
+            
+        </section>
+
+
+        <footer>   
+            Resources:
+        </footer>
+    
+           
+
+        
+
+        
+    </body>
+</html>
