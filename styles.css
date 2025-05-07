@@ -202,7 +202,11 @@ div{
     padding-left: 1.5em;            
     margin-top: 1em;
     font-family: Georgia, serif;   
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 1rem;
+>>>>>>> 3e16935f653c5218c895007020c2b1ed05b74cf0
     background-color: rgb(211, 213, 231);    
     border-left: 4px;     
     padding: 1em;
