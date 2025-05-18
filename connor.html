@@ -54,12 +54,10 @@
         <p>
             Like Hodgkin-Huxley, this model describes membrane potential using nonlinear differential equations based on ion channel dynamics. Its key addition is the \( I_A \) current, which activates and inactivates rapidly.
         </p>
-
-             <p> The equation is: </p>
             
-            <p>
+        <p>
                 <img src="images/cs_equation.png" alt="Connor-Stevens Equation" style="max-width: 90%; height: auto;">
-            </p>
+        </p>
 
 
         <p><strong>Components of the Model</strong></p>
@@ -69,34 +67,28 @@
         </p>
 
         <p>
-            <strong>1. Current Injection (\( I_e \))</strong><br/>
+            <strong>1. Current Injection I_e</strong><br/>
             External current input used to simulate stimuli, just as in the HH model.
         </p>
 
         <p>
-            <strong>2. Leak Conductance (\( \bar{g}_L \))</strong><br/>
+            <strong>2. Leak Conductance g_L</strong><br/>
             Passive ion flow across the membrane through leak channels, contributing to the resting membrane potential.
         </p>
 
         <p>
-            <strong>3. Delayed Rectifier Potassium Current (\( \bar{g}_K \))</strong><br/>
-            Helps return the membrane to rest after depolarization. This current increases as \( n \) activates during a spike.
+            <strong>3. Delayed Rectifier Potassium Current g_K</strong><br/>
+            Helps return the membrane to rest after depolarization. This current increases as n activates during a spike.
         </p>
 
         <p>
-            <strong>4. Transient Sodium Current (\( \bar{g}_{Na} \))</strong><br/>
+            <strong>4. Transient Sodium Current g_Na</strong><br/>
             Initiates the rapid upstroke of the action potential through voltage-gated sodium channels. Modeled using gate variables \( m \) and \( h \).
         </p>
 
         <p>
-            <strong>5. A-type Potassium Current (\( \bar{g}_A \))</strong><br/>
-            Unique to the Connor-Stevens model. The \( I_A \) current activates quickly and inactivates shortly after, contributing to delayed firing and spike frequency modulation. It is defined as: 
-        </p>
-
-        <p>
-            \[
-            I_A = \bar{g}_A \cdot a^3 b \cdot (V - E_K)
-            \]
+            <strong>5. A-type Potassium Current g_A </strong><br/>
+            Unique to the Connor-Stevens model. The I_A current activates quickly and inactivates shortly after, contributing to delayed firing and spike frequency modulation.
         </p>
 
         <p>
