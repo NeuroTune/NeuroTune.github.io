@@ -55,29 +55,12 @@
             Like Hodgkin-Huxley, this model describes membrane potential using nonlinear differential equations based on ion channel dynamics. Its key addition is the \( I_A \) current, which activates and inactivates rapidly.
         </p>
 
-        <p>The main equation is:</p>
+             <p> The equation is: </p>
+            
+            <p>
+                <img src="images/cs_equation.png" alt="Connor-Stevens Equation" style="max-width: 90%; height: auto;">
+            </p>
 
-        <p>
-            \( C_m \frac{dV}{dt} = A I_e - \bar{g}_L (V - E_L) - \bar{g}_K n^4 (V - E_K) - \bar{g}_{Na} m^3 h (V - E_{Na}) - \bar{g}_A a^3 b (V - E_K) \)
-        </p>
-
-        <p>Where:</p>
-
-        <ul class="math-definitions">
-            <li>\( C_m \): Membrane capacitance</li>
-            <li>\( \frac{dV}{dt} \): Change in membrane potential over time</li>
-            <li>\( A \): Membrane area</li>
-            <li>\( I_e \): Injected current</li>
-            <li>\( \bar{g}_L \): Leak conductance</li>
-            <li>\( E_L \): Leak reversal potential</li>
-            <li>\( \bar{g}_K \): Potassium conductance</li>
-            <li>\( \bar{g}_{Na} \): Sodium conductance</li>
-            <li>\( \bar{g}_A \): A-type potassium conductance</li>
-            <li>\( E_K \): Potassium reversal potential</li>
-            <li>\( E_{Na} \): Sodium reversal potential</li>
-            <li>\( n, m, h \): Gate variables for potassium and sodium channels</li>
-            <li>\( a, b \): Activation and inactivation variables for A-type potassium channels</li>
-        </ul>
 
         <p><strong>Components of the Model</strong></p>
 
