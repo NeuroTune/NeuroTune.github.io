@@ -1,56 +1,14 @@
 
-
-
 body{
-    background-color: rgb(217, 219, 233);
+    background-color: rgb(204, 218, 241);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
 
 header{
-    background: rgb(0,0,0);
+    background: rgb(161, 184, 224);
     padding: 20px;   
-}
-
-
-
-h1 {
-    color: rgb(229, 227, 238);
-    margin: 20px 1px 10px 1px;  
-    font-size: clamp(20px, 5vw, 40px);
-
-}
-
-h1 .main-title {
-    font-size: clamp(20px, 5vw, 40px); 
-    color: rgb(229, 227, 238);
-}
-
-h1 .sub-title {
-    font-size: clamp(15px, 3vw, 25px);  
-    margin-left: 10px; 
-    color: rgb(177, 211, 158);
-}
-
-
-
-.main-title {
-    font-size: 2em;
-  }
-  
-  .sub-title {
-    font-size: 0.7em;
-    margin-left: 10px;
-}
-
-  
-
-
-
-h3{
-    color: rgb(8, 6, 16); 
-    font-size: clamp(15px, 3vw, 25px); 
 }
 
 
@@ -60,22 +18,32 @@ h1  a {
     text-decoration: none;     
 }
 
-h1  a:visited {
-    color: rgb(229, 227, 238);  
-}
-
 h1  a:hover {
-    color: lightyellow;    
+    color: rgb(14, 79, 171);    
     text-decoration: none; 
 }
 
 
+.main-title {
+    font-size: clamp(20px, 5vw, 40px);
+    color: rgb(229, 227, 238);
+  }
+  
+  .sub-title {
+    font-size: clamp(15px, 3vw, 25px);
+    margin-left: 10px;
+    color: rgb(48, 47, 91);
+}
 
+
+h3{
+    color: rgb(6, 7, 16); 
+    font-size: clamp(15px, 3vw, 25px); 
+}
 
 
 
 /* LINKS */
-
 ul.links {
     position: absolute;
     top: 10px;            
@@ -85,63 +53,42 @@ ul.links {
     list-style-type: none;
     display: flex;         
     gap: 20px;           
- 
 }
 
-ul.links  li {
-    margin: 0;
-    padding: 0;
-   
-}
 
-ul.links  a {
+ul.links a {
     color: white;          
     text-decoration: none;  
-    font-size: clamp(12px, 2vw, 15px);   
-}
-
-ul.links  a:visited {
-    color: white;          
-    font-size: 1vw;
-
-}
-
-ul.links  a:hover {
-    color: lightyellow;      
-    text-decoration: underline;
+    font-size: clamp(12px, 2vw, 15px);  
 }
 
 
 
-
-/* BUTTONS */
+/* Button Section */
 .nav-section {
-    background: rgb(30, 30, 51);
     padding: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5px;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
-
-div{
-    background: rgb(30, 30, 51); 
-    margin:auto;
-    width:100px;
+div {
+    background: rgb(174, 189, 214); 
+    margin: auto;
+    width: 100px;
     color: white;
-    display: inline;
+    display: inline-block; 
 }
 
-
-/* Button styles for the links */
+/* Button styles */
 .nav-button {
-    display: flex;                 
-    justify-content: center;    
-    align-items: center;          
-    flex-direction: column;        
-    background: rgb(30, 30, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(174, 189, 214); 
     color: white;
     width: clamp(100px, 15vw, 140px);
     height: clamp(40px, 5vw, 60px);
@@ -153,24 +100,15 @@ div{
     text-align: center;
 }
 
-
-/* Links inside the buttons */
 .nav-button a {
-    color: white;               
-    text-decoration: none;      
-    display: inline-block;   
-}  
-
-.nav-button:visited {
-    color: rgb(202, 199, 218);  
-    
+    color: white;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .nav-button:hover {
     background: rgb(48, 47, 91);
 }
-
-
 
 
 
@@ -197,30 +135,10 @@ div{
 }
 
 
-.math-definitions {
-    list-style-type: square;         
-    padding-left: 1.5em;            
-    margin-top: 1em;
-    font-family: Georgia, serif;   
-    font-size: 1.2rem;
-    background-color: white;   
-    border-left: 4px;     
-    padding: 1em;
-    border-radius: 8px;
-    line-height: 1.6; 
-}
-
-.math-definitions li {
-    margin-bottom: 0.5em;      
-}
-
-
 footer{
-    background: rgb(0,0,0);
+    background: rgb(161, 184, 224);
     color: white;
-    padding: 20px;
+    padding: 10px;
+    font-size: clamp(10px, 1.2vw, 18px); 
 }
 
-/* git add . && git commit -m "Update site content" && git push origin main
-
-*/
