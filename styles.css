@@ -5,19 +5,17 @@ body{
     
 }
 
-header {
-  background:rgb(161, 184, 224);
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+header{
+    background: rgb(161, 184, 224);
+    padding: 15px;   
 }
 
 
 h1  a {
     color: rgb(229, 227, 238);           
-    text-decoration: none;  
-    flex-wrap: wrap;    
+    text-decoration: none;     
+    
 }
 
 h1  a:hover {
