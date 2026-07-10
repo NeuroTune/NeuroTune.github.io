@@ -1,78 +1,108 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-body{
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
     background-color: rgb(204, 218, 241);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
-header{
+header {
+    position: relative;
     background: rgb(161, 184, 224);
-    padding: 15px;  
+    padding: 40px 15px 15px;
 }
 
-
-h1  a {
-    color: rgb(204, 218, 241);          
-    text-decoration: none;     
+h1 {
+    margin: 0;
 }
 
-h1  a:hover {
-    color: rgb(14, 79, 171);    
-    text-decoration: none; 
+h1 a {
+    text-decoration: none;
 }
 
+h1 a:hover {
+    color: rgb(14, 79, 171);
+    text-decoration: none;
+}
 
 .main-title {
-    font-size: clamp(20px, 5vw, 40px);
+    font-size: clamp(24px, 5vw, 40px);
     color: rgb(229, 227, 238);
-  }
-  
-  .sub-title {
-    font-size: clamp(15px, 3vw, 25px);
+    font-weight: 700;
+}
+
+.sub-title {
+    font-size: clamp(14px, 3vw, 25px);
     margin-left: 10px;
     color: rgb(48, 47, 91);
 }
 
 
-h3{
-    color: rgb(6, 7, 16); 
-    font-size: clamp(15px, 3vw, 25px); 
-}
-
-
-
-/* LINKS */
 ul.links {
     position: absolute;
-    top: 10px;            
-    right: 10px;         
+    top: 10px;
+    right: 15px;
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: flex;         
-    gap: 20px;           
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
 }
-
 
 ul.links a {
-    color: white;          
-    text-decoration: none;  
-    font-size: clamp(12px, 2vw, 15px);  
+    color: rgb(33, 37, 82);
+    text-decoration: none;
+    font-size: clamp(13px, 2vw, 15px);
+    font-weight: 600;
+}
+
+ul.links a:hover {
+    color: rgb(14, 79, 171);
+    text-decoration: underline;
 }
 
 
-/* Button styles */
+.nav-section {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.nav-section div {
+    background: transparent;
+    width: auto;
+    margin: 0;
+    display: flex;
+}
+
 .nav-button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(204, 218, 241);  
+    background: rgb(204, 218, 241);
     color: #000;
-    width: clamp(100px, 15vw, 140px);
-    height: clamp(40px, 5vw, 60px);
-    font-size: clamp(10px, 2vw, 16px);
+    width: clamp(110px, 18vw, 150px);
+    min-height: 48px;
+    padding: 6px 8px;
+    font-size: clamp(12px, 2vw, 16px);
     text-decoration: none;
     border-right: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -80,45 +110,57 @@ ul.links a {
     text-align: center;
 }
 
-.nav-section {
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
-}
-
 .nav-button:hover {
     background: rgb(48, 47, 91);
+    color: #fff;
 }
 
-div {
-    background: rgb(204, 218, 241);  
-    margin: auto;
-    width: 100px;
-    color: white;
-    display: inline-block; 
+
+h3 {
+    color: rgb(6, 7, 16);
+    font-size: clamp(18px, 3vw, 26px);
 }
 
 .model-section {
-    background: white;  
-    padding: 1rem;           
-    margin: 1rem auto 0 auto;  
-    color: rgb(8, 6, 16);           
-    font-size: clamp(14px, 1.2vw, 18px);  
-    line-height: 1.6;    
+    background: white;
+    max-width: 900px;
+    padding: 1.25rem;
+    margin: 1rem auto 0;
+    color: rgb(8, 6, 16);
+    font-size: clamp(15px, 1.2vw, 18px);
+    line-height: 1.6;
 }
 
 .model-section p {
-    color: rgb(8, 6, 16); 
-    font-size: clamp(14px, 1.2vw, 18px); 
+    color: rgb(8, 6, 16);
+    font-size: clamp(15px, 1.2vw, 18px);
 }
+
+.model-section a {
+    color: rgb(14, 79, 171);
+}
+
 
 footer {
     background: rgb(161, 184, 224);
-    color: white;
-    padding: 10px;
-    font-size: clamp(10px, 1.2vw, 18px); 
-    text-align: center; /* Optional: Center the text */
+    color: rgb(33, 37, 82);
+    padding: 14px;
+    font-size: clamp(12px, 1.2vw, 15px);
+    line-height: 1.5;
+    text-align: center;
 }
 
+
+@media (max-width: 640px) {
+    header {
+        padding-top: 56px;
+    }
+
+    ul.links {
+        justify-content: flex-end;
+    }
+
+    .model-section img {
+        max-width: 100% !important;
+    }
+}
