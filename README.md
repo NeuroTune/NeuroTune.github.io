@@ -61,5 +61,4 @@ Mathematical Modeling of Neural Systems*, Chapter 6. MIT Press.
 
 ## Author
 
-**Tuba Aksoy** — [GitHub](https://github.com/NeuroTune) ·
-[LinkedIn](https://www.linkedin.com/in/tbdbx/)
+**Tuba Aksoy**
